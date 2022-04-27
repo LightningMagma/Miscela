@@ -216,12 +216,17 @@ namespace Miscela
 
         public static void SeptimoPunto()
         {
-            Console.WriteLine("Ingrese el radio del circulo");
-            double radio = Convert.ToDouble(Console.ReadLine());
-            double circu = 2 * Math.PI * radio;
-            double area = Math.PI * Math.Pow(radio, 2);
-            Console.WriteLine("La longitud de la circunferencia es: " + circu);
-            Console.WriteLine("El area del circulo es: " + area);
+            Console.WriteLine("Ingrese el año");
+            double anio = Convert.ToDouble(Console.ReadLine());
+
+            if (anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0)
+            {
+                Console.WriteLine("Es bisiesto {0}\n", anio);
+            }
+            else
+            {
+                Console.WriteLine("no es bisiesto {0} \n", anio);
+            }
         }
 
         public static void separador()
