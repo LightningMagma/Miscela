@@ -13,13 +13,15 @@ namespace Miscela
             int opc;
             OperadoresAric operadores = new OperadoresAric();
             Condicionales condicionales = new Condicionales();
+            ciclos Ciclos= new ciclos();
+            Arreglos arreglos = new Arreglos();
             do
             {
                 Console.Clear();
                 Console.WriteLine("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
                 Console.WriteLine("▓       Miscelánea C#       ▓");
                 Console.WriteLine("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
-                Console.WriteLine("▓Digite 1 para operadores   ▓\n▓Digite 2 para condicionales▓\n▓Digite 3 bucles            ▓\n▓Digite 4 para arreglos     ▓\n▓Digite 9 para salir        ▓");
+                Console.WriteLine("▓Digite 1 para operadores   ▓\n▓Digite 2 para condicionales▓\n▓Digite 3 para ciclos       ▓\n▓Digite 4 para arreglos     ▓\n▓Digite 9 para salir        ▓");
                 Console.WriteLine("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
                 opc = int.Parse(Console.ReadLine());
 
@@ -40,13 +42,13 @@ namespace Miscela
 
                     case 3:
                         {
-                            //Bucles();
+                            Ciclos.Ciclos();
                         }
                         break;
 
                     case 4:
                         {
-                            // Arreglos();
+                            arreglos.arreglos();
                         }
                         break;
                     case 9:
