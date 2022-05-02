@@ -10,7 +10,7 @@ namespace Miscela
     {
         static void Main(string[] args)
         {
-            int opc;
+            int opc=0;
             OperadoresAric operadores = new OperadoresAric();
             Condicionales condicionales = new Condicionales();
             ciclos Ciclos= new ciclos();
@@ -23,10 +23,19 @@ namespace Miscela
                 Console.WriteLine("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
                 Console.WriteLine("▓Digite 1 para operadores   ▓\n▓Digite 2 para condicionales▓\n▓Digite 3 para ciclos       ▓\n▓Digite 4 para arreglos     ▓\n▓Digite 9 para salir        ▓");
                 Console.WriteLine("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
-                opc = int.Parse(Console.ReadLine());
+                  
+                    try
+                    {
+                        opc = int.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException e)
+                    {
+                        Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                        Console.ReadKey();
+                    }
 
 
-                switch (opc)
+                    switch (opc)
                 {
                     case 1:
                         {
@@ -69,8 +78,7 @@ namespace Miscela
             Console.ReadKey();
         }
 
-        /*
-    */
+        
     } 
 
     

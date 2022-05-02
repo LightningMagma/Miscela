@@ -10,7 +10,7 @@ namespace Miscela
     {
         public void condicionales()
         {
-            int OpcOpe;
+            int OpcOpe=0;
 
             do
             {
@@ -26,7 +26,15 @@ namespace Miscela
                 Console.WriteLine(" 7. Determinar si un año es bisiesto");
                 Console.WriteLine(" 9. Salir");
 
-                OpcOpe = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    OpcOpe = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                    Console.ReadKey();
+                }
 
 
                 switch (OpcOpe)
@@ -87,6 +95,15 @@ namespace Miscela
         {
             Console.WriteLine("Ingrese un número entero");
             double numeroCon = Convert.ToDouble(Console.ReadLine());
+            try
+            {
+                numeroCon = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             if (numeroCon>0)
             {
                 Console.WriteLine($"El número {numeroCon} es positivo");
@@ -102,9 +119,27 @@ namespace Miscela
         {
             
             Console.WriteLine("Ingrese el primer número");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num1 = 0;
+            try
+            {
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = 0;
+            try
+            {
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             if (num1>num2)
             {
                 Console.WriteLine($"El número {num1} es mayor que {num2}");
@@ -123,11 +158,38 @@ namespace Miscela
         public static void TercerPunto()
         {
             Console.WriteLine("Ingrese el primer número");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num1 = 0;
+            try
+            {
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = 0;
+            try
+            {
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el tercero número");
-            double num3 = Convert.ToDouble(Console.ReadLine());
+            double num3 = 0;
+            try
+            {
+                num3 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
 
             if (num1 > num2 && num1>num3)
             {
@@ -161,9 +223,27 @@ namespace Miscela
         {
             double resul=0;
             Console.WriteLine("Ingrese el primer número");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num1 = 0;
+            try
+            {
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = 0;
+            try
+            {
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             if (num1<num2)
             {
                 resul = num2 + num1;
@@ -181,9 +261,27 @@ namespace Miscela
         {
             double resul = 0;
             Console.WriteLine("Ingrese el primer número");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num1 = 0;
+            try
+            {
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = 0;
+            try
+            {
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             if (num2!=0)
             {
                 resul = num1 / num2;
@@ -199,9 +297,27 @@ namespace Miscela
         {
             double resul = 0;
             Console.WriteLine("Ingrese el primer número");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num1 = 0;
+            try
+            {
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = 0;
+            try
+            {
+                num2 = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             if (num1<0||num2<0)
             {
                 resul = num1 + num2;
@@ -217,7 +333,16 @@ namespace Miscela
         public static void SeptimoPunto()
         {
             Console.WriteLine("Ingrese el año");
-            double anio = Convert.ToDouble(Console.ReadLine());
+            double anio = 0;
+            try
+            {
+                anio = Convert.ToDouble(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
 
             if (anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0)
             {

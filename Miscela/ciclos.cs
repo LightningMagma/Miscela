@@ -10,7 +10,7 @@ namespace Miscela
     {
         public void Ciclos()
         {
-            int OpcOpe;
+            int OpcOpe = 0;
 
             do
             {
@@ -26,8 +26,16 @@ namespace Miscela
                 Console.WriteLine(" 7. Suma de números ingresados por teclado mientras sean diferentes de 0");
                 Console.WriteLine(" 9. Salir");
 
-                OpcOpe = Convert.ToInt32(Console.ReadLine());
-
+                
+                try
+                {
+                    OpcOpe = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                    Console.ReadKey();
+                }
 
                 switch (OpcOpe)
                 {
@@ -141,9 +149,27 @@ namespace Miscela
         {
             Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
             Console.WriteLine("Ingrese el primer número");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num1 = 0;
+            try
+            {
+                num1 = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine("Ingrese el segundo número");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num2 = 0;
+            try
+            {
+                num2 = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.ReadKey();
+            }
             Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
             for (int i = num1; i <= num2; i++)
             {
@@ -157,7 +183,16 @@ namespace Miscela
             do
             {
                 Console.WriteLine("Ingrese el número que va a sumar");
-                numero = Convert.ToInt32(Console.ReadLine());
+                numero = 0;
+                try
+                {
+                    numero = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                    Console.ReadKey();
+                }
                 suma = suma + numero;
                 Console.WriteLine($"La suma hasta el momento es: {suma}");
             } while (numero!=0);

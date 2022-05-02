@@ -11,7 +11,7 @@ namespace Miscela
         public void arreglos()
         {
             Console.WriteLine("EL PROGRAMA ESTÁ EN PROCESO. COMUNIQUESE CON EL ADMINISTRADOR");
-            int OpcOpe;
+            int OpcOpe=0;
 
             do
             {
@@ -20,8 +20,16 @@ namespace Miscela
                 Console.WriteLine("Digite el número correspondiente a la tarea que desea realizar");
                 Console.WriteLine(" 9. Salir");
 
-                OpcOpe = Convert.ToInt32(Console.ReadLine());
-
+                
+                try
+                {
+                    OpcOpe = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                    Console.ReadKey();
+                }
 
                 switch (OpcOpe)
                 {
