@@ -17,13 +17,13 @@ namespace Miscela
 
 
                 Console.WriteLine("Digite el número correspondiente a la tarea que desea realizar");
-                Console.WriteLine(" 1. Multiplos de 3 existentes entre 1 y 100");
-                Console.WriteLine(" 2. Numeros Impares entre 0 y 100");
-                Console.WriteLine(" 3. Numeros Pares entre 1 y 100");
-                Console.WriteLine(" 4. Listado de los cuadrados de los numeros del 1 al 30");
-                Console.WriteLine(" 5. Suma de los cuadrados de los primeros cien numeros naturales");
-                Console.WriteLine(" 6. Generador de numeros encontrados entre dos numeros ingresados por el usuario.\n¡¡¡EL PRIMER NUMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
-                Console.WriteLine(" 7. Suma de numeros ingresados por teclado mientras sean diferentes de 0");
+                Console.WriteLine(" 1. Múltiplos de 3 existentes entre 1 y 100");
+                Console.WriteLine(" 2. Números Impares entre 0 y 100");
+                Console.WriteLine(" 3. Números Pares entre 1 y 100");
+                Console.WriteLine(" 4. Listado de los cuadrados de los números del 1 al 30");
+                Console.WriteLine(" 5. Suma de los cuadrados de los primeros cien números naturales");
+                Console.WriteLine(" 6. Generador de números encontrados entre dos números ingresados por el usuario.\n¡¡¡EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
+                Console.WriteLine(" 7. Suma de números ingresados por teclado mientras sean diferentes de 0");
                 Console.WriteLine(" 9. Salir");
 
                 OpcOpe = Convert.ToInt32(Console.ReadLine());
@@ -69,7 +69,7 @@ namespace Miscela
                         break;
 
                     case 9:
-                        Console.WriteLine("Saliendo del programa");
+                        Console.WriteLine("Saliendo de la sección");
                         break;
                     default:
                         {
@@ -85,7 +85,7 @@ namespace Miscela
 
         public static void PrimerPunto()
         {
-            Console.WriteLine("Los multiplos de 3 son: ");
+            Console.WriteLine("Los múltiplos de 3 son: ");
             for (int i = 3; i < 100; i+=3)
             {
                 Console.WriteLine(i);
@@ -95,7 +95,7 @@ namespace Miscela
 
         public static void SegundoPunto()
         {
-            Console.WriteLine("Estos son los numeros impares entre 0 y 100:");
+            Console.WriteLine("Estos son los números impares entre 0 y 100:");
 
             for (int i = 1; i < 100; i+=2)
             {
@@ -105,7 +105,7 @@ namespace Miscela
 
         public static void TercerPunto()
         {
-            Console.WriteLine("Estos son los numeros pares entre 1 y 100:");
+            Console.WriteLine("Estos son los números pares entre 1 y 100:");
 
             for (int i = 2; i < 100; i += 2)
             {
@@ -126,7 +126,7 @@ namespace Miscela
 
         public static void QuintoPunto()
         {
-            Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros numeros naturales");
+            Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros números naturales");
             int suma=0;
             for (int i = 1; i <= 100; i ++)
             {
@@ -139,12 +139,12 @@ namespace Miscela
 
         public static void SextoPunto()
         {
-            Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NUMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
+            Console.WriteLine("Ingrese el primer número");
             int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             int num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Los numeros comprendidos entre {num1} y {num2} son:");
+            Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
             for (int i = num1; i <= num2; i++)
             {
                 Console.WriteLine(i);
@@ -156,7 +156,7 @@ namespace Miscela
             int numero,suma=0;
             do
             {
-                Console.WriteLine("Ingrese el numero que va a sumar");
+                Console.WriteLine("Ingrese el número que va a sumar");
                 numero = Convert.ToInt32(Console.ReadLine());
                 suma = suma + numero;
                 Console.WriteLine($"La suma hasta el momento es: {suma}");

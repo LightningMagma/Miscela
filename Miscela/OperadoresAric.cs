@@ -84,6 +84,7 @@ namespace Miscela
                 }
 
             } while (OpcOpe != 9);
+            
 
             Console.ReadKey();
         }
@@ -102,9 +103,9 @@ namespace Miscela
         public static void SegundoPunto()
         {
             double resul;
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
             resul = num1 + num2;
             Console.WriteLine("El resultado es:" + resul);
@@ -113,7 +114,7 @@ namespace Miscela
         public static void TercerPunto()
         {
             double resul;
-            Console.WriteLine("Ingrese el numero");
+            Console.WriteLine("Ingrese el número");
             double num1 = Convert.ToDouble(Console.ReadLine());
             resul = num1 * num1;
             Console.WriteLine("El resultado es:" + resul);
@@ -122,7 +123,7 @@ namespace Miscela
         public static void CuartoPunto()
         {
             double resul;
-            Console.WriteLine("Ingrese el numero de euros que desea convertir");
+            Console.WriteLine("Ingrese el número de euros que desea convertir");
             double valor1 = Convert.ToDouble(Console.ReadLine());
             resul = valor1 * 0.94;
             Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");            
@@ -165,11 +166,11 @@ namespace Miscela
         public static void OctavoPunto()
         {
             double resul1;
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double numero1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double numero2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el tercer numero");
+            Console.WriteLine("Ingrese el tercer número");
             double numero3 = Convert.ToDouble(Console.ReadLine());
             resul1 = (numero1 + numero2 + numero3) / 3;
             Console.WriteLine("El promedio de los tres numeros es: " + resul1);

@@ -69,7 +69,7 @@ namespace Miscela
                         break;
                     
                     case 9:
-                        Console.WriteLine("Saliendo del programa");
+                        Console.WriteLine("Saliendo de la sección");
                         break;
                     default:
                         {
@@ -85,15 +85,15 @@ namespace Miscela
 
         public static void PrimerPunto()
         {
-            Console.WriteLine("Ingrese un numero entero");
+            Console.WriteLine("Ingrese un número entero");
             double numeroCon = Convert.ToDouble(Console.ReadLine());
             if (numeroCon>0)
             {
-                Console.WriteLine($"El numero {numeroCon} es positivo");
+                Console.WriteLine($"El número {numeroCon} es positivo");
             }
             else
             {
-                Console.WriteLine($"El numero {numeroCon} es negativo");
+                Console.WriteLine($"El número {numeroCon} es negativo");
             }
             
         }
@@ -101,68 +101,68 @@ namespace Miscela
         public static void SegundoPunto()
         {
             
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
             if (num1>num2)
             {
-                Console.WriteLine($"El numero {num1} es mayor que {num2}");
+                Console.WriteLine($"El número {num1} es mayor que {num2}");
             }
             else if (num2>num1)
             {
-                Console.WriteLine($"El numero {num1} es menor que {num2}");
+                Console.WriteLine($"El número {num1} es menor que {num2}");
             }
             else
             {
-                Console.WriteLine($"El numero {num1} es igual que {num2}");
+                Console.WriteLine($"El número {num1} es igual que {num2}");
             }
             
         }
 
         public static void TercerPunto()
         {
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el tercero numero");
+            Console.WriteLine("Ingrese el tercero número");
             double num3 = Convert.ToDouble(Console.ReadLine());
 
             if (num1 > num2 && num1>num3)
             {
-                Console.WriteLine($"El numero es mayor {num1}");
+                Console.WriteLine($"El número es mayor {num1}");
             }
             else if (num2>num1&&num2>num3)
             {
-                Console.WriteLine($"El numero es mayor {num2}");
+                Console.WriteLine($"El número es mayor {num2}");
             }
             else 
             {
-                Console.WriteLine($"El numero es mayor {num3}");
+                Console.WriteLine($"El número es mayor {num3}");
             }
             separador();
 
             if (num1 < num2 && num1 < num3)
             {
-                Console.WriteLine($"El numero es menor {num1}");
+                Console.WriteLine($"El número es menor {num1}");
             }
             else if (num2 < num1 && num2 < num3)
             {
-                Console.WriteLine($"El numero es menor {num2}");
+                Console.WriteLine($"El número es menor {num2}");
             }
             else
             {
-                Console.WriteLine($"El numero es menor {num3}");
+                Console.WriteLine($"El número es menor {num3}");
             }
         }
 
         public static void CuartoPunto()
         {
             double resul=0;
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
             if (num1<num2)
             {
@@ -180,9 +180,9 @@ namespace Miscela
         public static void QuintoPunto()
         {
             double resul = 0;
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
             if (num2!=0)
             {
@@ -198,9 +198,9 @@ namespace Miscela
         public static void SextoPunto()
         {
             double resul = 0;
-            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine("Ingrese el primer número");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo número");
             double num2 = Convert.ToDouble(Console.ReadLine());
             if (num1<0||num2<0)
             {
