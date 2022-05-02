@@ -134,7 +134,7 @@ namespace Miscela
                 suma = suma + cuadrado;
                 Console.WriteLine($"El cuadrado de {i} es {cuadrado}");
             }
-            Console.WriteLine(suma);
+            Console.WriteLine($"El resultado de la suma es {suma}");
         }
 
         public static void SextoPunto()
