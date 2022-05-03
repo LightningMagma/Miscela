@@ -90,8 +90,8 @@ namespace Miscela
 
             Console.ReadKey();
         }
-
-        public static void PrimerPunto()
+        Variables variables = new Variables(0,0,0,0);
+        public  void PrimerPunto()
         {
             Console.WriteLine("Los múltiplos de 3 son: ");
             for (int i = 3; i < 100; i+=3)
@@ -101,7 +101,7 @@ namespace Miscela
 
         }
 
-        public static void SegundoPunto()
+        public  void SegundoPunto()
         {
             Console.WriteLine("Estos son los números impares entre 0 y 100:");
 
@@ -111,7 +111,7 @@ namespace Miscela
             }
         }
 
-        public static void TercerPunto()
+        public  void TercerPunto()
         {
             Console.WriteLine("Estos son los números pares entre 1 y 100:");
 
@@ -121,42 +121,39 @@ namespace Miscela
             }
         }
 
-        public static void CuartoPunto()
+        public  void CuartoPunto()
         {
             Console.WriteLine("Estos son los cuadrados de los números del uno al treinta:");
 
             for (int i = 1; i <= 30; i++)
             {
-                int cuadrados = (int) Math.Pow(i, 2);
-                Console.WriteLine($"El cuadrado de {i} es {cuadrados}");
+                variables.num1= (int) Math.Pow(i, 2);
+                Console.WriteLine($"El cuadrado de {i} es {variables.num1}");
             }
         }
 
-        public static void QuintoPunto()
+        public  void QuintoPunto()
         {
-            Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros números naturales");
-            int suma=0;
+            Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros números naturales");            
             for (int i = 1; i <= 100; i ++)
             {
-                int cuadrado = (int) Math.Pow(i,2);
-                suma = suma + cuadrado;
-                Console.WriteLine($"El cuadrado de {i} es {cuadrado}");
+                variables.num2 = (int) Math.Pow(i,2);
+                variables.num1 = variables.num1 + variables.num2;
+                Console.WriteLine($"El cuadrado de {i} es {variables.num2}");
             }
-            Console.WriteLine($"El resultado de la suma es {suma}");
+            Console.WriteLine($"El resultado de la suma es {variables.num1}");
         }
 
-        public static void SextoPunto()
-        {
-            int num2 = 0;
-            int num1 = 0;
+        public  void SextoPunto()
+        {     
             try
             {
                 Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
                 Console.WriteLine("Ingrese el primer número");
-                num1 = Convert.ToInt32(Console.ReadLine());
+                variables.num1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                num2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
+                variables.num2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Los números comprendidos entre {variables.num1} y {variables.num2} son:");
             }
             catch (FormatException e)
             {
@@ -165,24 +162,24 @@ namespace Miscela
             }      
             
             
-            for (int i = num1; i <= num2; i++)
+            for (variables.num1=variables.num1 ; variables.num1 <= variables.num2; variables.num1++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(variables.num1);
             }
         }
 
-        public static void SeptimoPunto()
+        public  void SeptimoPunto()
         {
-            int numero,suma=0;
+            
             do
             {
-                numero = 0;
+                variables.num1 = 0;
                 try
                 {
-                    Console.WriteLine("Ingrese el número que va a sumar");                    
-                    numero = Convert.ToInt32(Console.ReadLine());
-                    suma = suma + numero;
-                    Console.WriteLine($"La suma hasta el momento es: {suma}");
+                    Console.WriteLine("Ingrese el número que va a sumar");
+                    variables.num1 = Convert.ToInt32(Console.ReadLine());
+                    variables.num2 = variables.num2 + variables.num1;
+                    Console.WriteLine($"La suma hasta el momento es: {variables.num2}");
                 }
                 catch (FormatException e)
                 {
@@ -190,7 +187,7 @@ namespace Miscela
                     Console.ReadKey();
                 }
                 
-            } while (numero!=0);
+            } while (variables.num1 !=0);
         }
 
         public static void separador()
