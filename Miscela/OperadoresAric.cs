@@ -15,7 +15,7 @@ namespace Miscela
 
             do
             {
-                Console.WriteLine("Digite la operacion que desea realizar");
+                Console.WriteLine("Digite la operación que desea realizar");
                 Console.WriteLine(" 1. Area de un triángulo");
                 Console.WriteLine(" 2. Suma de dos números");
                 Console.WriteLine(" 3. Cuadrado de un número");
