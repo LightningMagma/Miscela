@@ -147,30 +147,24 @@ namespace Miscela
 
         public static void SextoPunto()
         {
-            Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
-            Console.WriteLine("Ingrese el primer número");
+            int num2 = 0;
             int num1 = 0;
             try
             {
+                Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
+                Console.WriteLine("Ingrese el primer número");
                 num1 = Convert.ToInt32(Console.ReadLine());
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
-                Console.ReadKey();
-            }
-            Console.WriteLine("Ingrese el segundo número");
-            int num2 = 0;
-            try
-            {
+                Console.WriteLine("Ingrese el segundo número");
                 num2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
             }
             catch (FormatException e)
             {
                 Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
                 Console.ReadKey();
-            }
-            Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
+            }      
+            
+            
             for (int i = num1; i <= num2; i++)
             {
                 Console.WriteLine(i);
@@ -182,19 +176,20 @@ namespace Miscela
             int numero,suma=0;
             do
             {
-                Console.WriteLine("Ingrese el número que va a sumar");
                 numero = 0;
                 try
                 {
+                    Console.WriteLine("Ingrese el número que va a sumar");                    
                     numero = Convert.ToInt32(Console.ReadLine());
+                    suma = suma + numero;
+                    Console.WriteLine($"La suma hasta el momento es: {suma}");
                 }
                 catch (FormatException e)
                 {
                     Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
                     Console.ReadKey();
                 }
-                suma = suma + numero;
-                Console.WriteLine($"La suma hasta el momento es: {suma}");
+                
             } while (numero!=0);
         }
 
