@@ -90,7 +90,7 @@ namespace Miscela
 
             Console.ReadKey();
         }
-        Variables variables = new Variables(0,0,0,0);
+        Variables variables = new Variables();
         public  void PrimerPunto()
         {
             Console.WriteLine("Los múltiplos de 3 son: ");
@@ -127,8 +127,8 @@ namespace Miscela
 
             for (int i = 1; i <= 30; i++)
             {
-                variables.num1= (int) Math.Pow(i, 2);
-                Console.WriteLine($"El cuadrado de {i} es {variables.num1}");
+                variables.Num1= (int) Math.Pow(i, 2);
+                Console.WriteLine($"El cuadrado de {i} es {variables.Num1}");
             }
         }
 
@@ -137,11 +137,11 @@ namespace Miscela
             Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros números naturales");            
             for (int i = 1; i <= 100; i ++)
             {
-                variables.num2 = (int) Math.Pow(i,2);
-                variables.num1 = variables.num1 + variables.num2;
-                Console.WriteLine($"El cuadrado de {i} es {variables.num2}");
+                variables.Num2 = (int) Math.Pow(i,2);
+                variables.Num1 = variables.Num1 + variables.Num2;
+                Console.WriteLine($"El cuadrado de {i} es {variables.Num2}");
             }
-            Console.WriteLine($"El resultado de la suma es {variables.num1}");
+            Console.WriteLine($"El resultado de la suma es {variables.Num1}");
         }
 
         public  void SextoPunto()
@@ -150,10 +150,10 @@ namespace Miscela
             {
                 Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = Convert.ToInt32(Console.ReadLine());
+                variables.Num1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Los números comprendidos entre {variables.num1} y {variables.num2} son:");
+                variables.Num2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Los números comprendidos entre {variables.Num1} y {variables.Num2} son:");
             }
             catch (FormatException e)
             {
@@ -162,9 +162,9 @@ namespace Miscela
             }      
             
             
-            for (variables.num1=variables.num1 ; variables.num1 <= variables.num2; variables.num1++)
+            for (variables.Num1=variables.Num1 ; variables.Num1 <= variables.Num2; variables.Num1++)
             {
-                Console.WriteLine(variables.num1);
+                Console.WriteLine(variables.Num1);
             }
         }
 
@@ -173,13 +173,13 @@ namespace Miscela
             
             do
             {
-                variables.num1 = 0;
+                variables.Num1 = 0;
                 try
                 {
                     Console.WriteLine("Ingrese el número que va a sumar");
-                    variables.num1 = Convert.ToInt32(Console.ReadLine());
-                    variables.num2 = variables.num2 + variables.num1;
-                    Console.WriteLine($"La suma hasta el momento es: {variables.num2}");
+                    variables.Num1 = Convert.ToInt32(Console.ReadLine());
+                    variables.Num2 = variables.Num2 + variables.Num1;
+                    Console.WriteLine($"La suma hasta el momento es: {variables.Num2}");
                 }
                 catch (FormatException e)
                 {
@@ -187,7 +187,7 @@ namespace Miscela
                     Console.ReadKey();
                 }
                 
-            } while (variables.num1 !=0);
+            } while (variables.Num1 !=0);
         }
 
         public static void separador()

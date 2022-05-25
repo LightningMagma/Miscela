@@ -90,7 +90,7 @@ namespace Miscela
 
             Console.ReadKey();
         }
-        Variables variables = new Variables(0,0,0,0);
+        Variables variables = new Variables();
 
 
         public void PrimerPunto()
@@ -100,7 +100,7 @@ namespace Miscela
             try
             {
 
-                variables.num1= Convert.ToDouble(Console.ReadLine());
+                variables.Num1= Convert.ToDouble(Console.ReadLine());
 
             }
             catch (FormatException e)
@@ -110,13 +110,13 @@ namespace Miscela
                 Console.ReadKey();
 
             }
-            if (variables.num1>0)
+            if (variables.Num1>0)
             {
-                Console.WriteLine($"El número {variables.num1} es positivo");
+                Console.WriteLine($"El número {variables.Num1} es positivo");
             }
             else
             {
-                Console.WriteLine($"El número {variables.num1} es negativo");
+                Console.WriteLine($"El número {variables.Num1} es negativo");
             }
             
         }
@@ -126,9 +126,9 @@ namespace Miscela
             try
             {
                 Console.WriteLine("Ingrese el primer número");                
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");                
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -136,17 +136,17 @@ namespace Miscela
                 Console.ReadKey();
             }
             
-            if (variables.num1> variables.num2)
+            if (variables.Num1> variables.Num2)
             {
-                Console.WriteLine($"El número {variables.num1} es mayor que {variables.num2}");
+                Console.WriteLine($"El número {variables.Num1} es mayor que {variables.Num2}");
             }
-            else if (variables.num2 > variables.num1)
+            else if (variables.Num2 > variables.Num1)
             {
-                Console.WriteLine($"El número {variables.num1} es menor que {variables.num2}");
+                Console.WriteLine($"El número {variables.Num1} es menor que {variables.Num2}");
             }
             else
             {
-                Console.WriteLine($"El número {variables.num1} es igual que {variables.num2}");
+                Console.WriteLine($"El número {variables.Num1} es igual que {variables.Num2}");
             }
             
         }
@@ -156,11 +156,11 @@ namespace Miscela
            try
             {
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el tercero número");
-                variables.num3 = Convert.ToDouble(Console.ReadLine());
+                variables.Num3 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -168,31 +168,31 @@ namespace Miscela
                 Console.ReadKey();
             }                  
                                    
-            if (variables.num1 > variables.num2 && variables.num1 > variables.num3)
+            if (variables.Num1 > variables.Num2 && variables.Num1 > variables.Num3)
             {
-                Console.WriteLine($"El número es mayor {variables.num1}");
+                Console.WriteLine($"El número es mayor {variables.Num1}");
             }
-            else if (variables.num2 > variables.num1 && variables.num2 > variables.num3)
+            else if (variables.Num2 > variables.Num1 && variables.Num2 > variables.Num3)
             {
-                Console.WriteLine($"El número es mayor {variables.num2}");
+                Console.WriteLine($"El número es mayor {variables.Num2}");
             }
             else 
             {
-                Console.WriteLine($"El número es mayor {variables.num3}");
+                Console.WriteLine($"El número es mayor {variables.Num3}");
             }
             separador();
 
-            if (variables.num1 < variables.num2 && variables.num1 < variables.num3)
+            if (variables.Num1 < variables.Num2 && variables.Num1 < variables.Num3)
             {
-                Console.WriteLine($"El número es menor {variables.num1}");
+                Console.WriteLine($"El número es menor {variables.Num1}");
             }
-            else if (variables.num2 < variables.num1 && variables.num2 < variables.num3)
+            else if (variables.Num2 < variables.Num1 && variables.Num2 < variables.Num3)
             {
-                Console.WriteLine($"El número es menor {variables.num2}");
+                Console.WriteLine($"El número es menor {variables.Num2}");
             }
             else
             {
-                Console.WriteLine($"El número es menor {variables.num3}");
+                Console.WriteLine($"El número es menor {variables.Num3}");
             }
         }
 
@@ -202,9 +202,9 @@ namespace Miscela
             try
             {
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -212,15 +212,15 @@ namespace Miscela
                 Console.ReadKey();
             }   
                        
-            if (variables.num1 < variables.num2)
+            if (variables.Num1 < variables.Num2)
             {
-                variables.num3=variables.num2 + variables.num1;
-                Console.WriteLine($"{variables.num1} + {variables.num2} = {variables.num3}");
+                variables.Num3=variables.Num2 + variables.Num1;
+                Console.WriteLine($"{variables.Num1} + {variables.Num2} = {variables.Num3}");
             }
             else
             {
-                variables.num3= variables.num1 - variables.num2;
-                Console.WriteLine($"{variables.num1} - {variables.num2} = {variables.num3}");
+                variables.Num3= variables.Num1 - variables.Num2;
+                Console.WriteLine($"{variables.Num1} - {variables.Num2} = {variables.Num3}");
             }
             
         }
@@ -231,9 +231,9 @@ namespace Miscela
             try
             {
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -242,10 +242,10 @@ namespace Miscela
             } 
             
            
-            if (variables.num2 !=0)
+            if (variables.Num2 !=0)
             {
-                variables.num3 = variables.num1 / variables.num2;
-                Console.WriteLine($"{variables.num1} / {variables.num2} = {variables.num3}");
+                variables.Num3 = variables.Num1 / variables.Num2;
+                Console.WriteLine($"{variables.Num1} / {variables.Num2} = {variables.Num3}");
             }
             else
             {
@@ -259,9 +259,9 @@ namespace Miscela
             try
             {
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -269,15 +269,15 @@ namespace Miscela
                 Console.ReadKey();
             }            
            
-            if (variables.num1 <0|| variables.num2 <0)
+            if (variables.Num1 <0|| variables.Num2 <0)
             {
-                variables.num3 = variables.num1 + variables.num2;
-                Console.WriteLine($"{variables.num1} + {variables.num2} = {variables.num3}");
+                variables.Num3 = variables.Num1 + variables.Num2;
+                Console.WriteLine($"{variables.Num1} + {variables.Num2} = {variables.Num3}");
             }
             else
             {
-                variables.num3 = variables.num1 * variables.num2;
-                Console.WriteLine($"{variables.num1} * {variables.num2} = {variables.num3}");
+                variables.Num3 = variables.Num1 * variables.Num2;
+                Console.WriteLine($"{variables.Num1} * {variables.Num2} = {variables.Num3}");
             }
         }
 
@@ -287,7 +287,7 @@ namespace Miscela
             
             try
             {
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
             }
             catch (FormatException e)
             {
@@ -295,13 +295,13 @@ namespace Miscela
                 Console.ReadKey();
             }
 
-            if (variables.num1 % 4 == 0 && variables.num1 % 100 != 0 || variables.num1 % 400 == 0)
+            if (variables.Num1 % 4 == 0 && variables.Num1 % 100 != 0 || variables.Num1 % 400 == 0)
             {
-                Console.WriteLine("Es bisiesto {0}\n", variables.num1);
+                Console.WriteLine("Es bisiesto {0}\n", variables.Num1);
             }
             else
             {
-                Console.WriteLine("no es bisiesto {0} \n", variables.num1);
+                Console.WriteLine("no es bisiesto {0} \n", variables.Num1);
             }
         }
 

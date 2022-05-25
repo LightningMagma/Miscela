@@ -95,24 +95,25 @@ namespace Miscela
 
             Console.ReadKey();
         }
-        Variables variables = new Variables(0, 0, 0, 0);
+        Variables variables = new Variables();
+        Validaciones validar = new Validaciones();
         public void PrimerPunto()
         {
             
-            try
-            {                       
+           //try
+            //{                       
             Console.WriteLine("Ingrese la base del triangulo");
-            variables.num1=(Convert.ToDouble(Console.ReadLine()));
+            variables.Num1=validar.validarDouble((Convert.ToDouble(Console.ReadLine())));
             Console.WriteLine("Ingrese la altura del triangulo");
-            variables.num2=(Convert.ToDouble(Console.ReadLine()));
-            variables.num3 = (variables.num1 * variables.num2) / 2;
-            Console.WriteLine("El resultado es:" + variables.num3);            
+            variables.Num2=(Convert.ToDouble(Console.ReadLine()));
+            variables.Num3 = (variables.Num1 * variables.Num2) / 2;
+            Console.WriteLine("El resultado es:" + variables.Num3);            
 
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine( "Se esperaba un número");
-            }
+            //}
+            //catch (FormatException ex)
+            //{
+              //  Console.WriteLine( "Se esperaba un número");
+            //}
         }
         
         public void SegundoPunto()
@@ -121,11 +122,11 @@ namespace Miscela
             try
             {               
                 Console.WriteLine("Ingrese el primer número");
-                variables.num1 = (Convert.ToDouble(Console.ReadLine()));
+                variables.Num1 = (Convert.ToDouble(Console.ReadLine()));
                 Console.WriteLine("Ingrese el segundo número");
-                variables.num2 = (Convert.ToDouble(Console.ReadLine()));
-                variables.num3= variables.num1 + variables.num2;
-                Console.WriteLine("El resultado es:" + variables.num3);
+                variables.Num2 = (Convert.ToDouble(Console.ReadLine()));
+                variables.Num3= variables.Num1 + variables.Num2;
+                Console.WriteLine("El resultado es:" + variables.Num3);
 
             }
             catch (FormatException e)
@@ -142,9 +143,9 @@ namespace Miscela
             try
             {              
                 Console.WriteLine("Ingrese el número");                
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
-                variables.num2 = variables.num1 * variables.num1;
-                Console.WriteLine("El resultado es:" + variables.num2);
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = variables.Num1 * variables.Num1;
+                Console.WriteLine("El resultado es:" + variables.Num2);
             }
             catch (FormatException e)
             {
@@ -160,9 +161,9 @@ namespace Miscela
             try
             {               
                 Console.WriteLine("Ingrese el número de euros que desea convertir");                
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
-                variables.num2 = variables.num1 * 0.94;
-                Console.WriteLine("Euros = €" + variables.num1 + " Equivalen a $" + variables.num2 + " Dolares");
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = variables.Num1 * 0.94;
+                Console.WriteLine("Euros = €" + variables.Num1 + " Equivalen a $" + variables.Num2 + " Dolares");
             }
             catch (FormatException e)
             {
@@ -180,11 +181,11 @@ namespace Miscela
                 
                 Console.WriteLine("Ingrese un lado del cuadrado");
                 
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
-                variables.num2 = Math.Pow(variables.num1, 2);
-                variables.num3 = variables.num1 * 4;
-                Console.WriteLine("El area del cuadrado es: " + variables.num2);
-                Console.WriteLine("El perimetro del cuadrado es: " + variables.num3);
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Math.Pow(variables.Num1, 2);
+                variables.Num3 = variables.Num1 * 4;
+                Console.WriteLine("El area del cuadrado es: " + variables.Num2);
+                Console.WriteLine("El perimetro del cuadrado es: " + variables.Num3);
             }
             catch (FormatException e)
             {
@@ -201,13 +202,13 @@ namespace Miscela
             {
                
                 Console.WriteLine("Ingrese el radio del cilindro");                
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese la altura del cilindro");
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
-                variables.num3 = Math.PI * Math.Pow(variables.num1, 2) * variables.num2;
-                variables.num4 = (2 * (Math.PI) * variables.num1 * variables.num2) + (2 * (Math.PI) * Math.Pow(variables.num1, 2));
-                Console.WriteLine("El volumen del cilindro es: " + variables.num3);
-                Console.WriteLine("El area del cilindro es: " + variables.num4);
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num3 = Math.PI * Math.Pow(variables.Num1, 2) * variables.Num2;
+                variables.Num4 = (2 * (Math.PI) * variables.Num1 * variables.Num2) + (2 * (Math.PI) * Math.Pow(variables.Num1, 2));
+                Console.WriteLine("El volumen del cilindro es: " + variables.Num3);
+                Console.WriteLine("El area del cilindro es: " + variables.Num4);
             }
             catch (FormatException e)
             {
@@ -223,11 +224,11 @@ namespace Miscela
             try
             {
                 Console.WriteLine("Ingrese el radio del circulo");                
-                variables.num1 = Convert.ToDouble(Console.ReadLine());
-                variables.num2= 2 * Math.PI * variables.num1;
-                variables.num3 = Math.PI * Math.Pow(variables.num1, 2);
-                Console.WriteLine("La longitud de la circunferencia es: " + variables.num2);
-                Console.WriteLine("El area del circulo es: " + variables.num4);
+                variables.Num1 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2= 2 * Math.PI * variables.Num1;
+                variables.Num3 = Math.PI * Math.Pow(variables.Num1, 2);
+                Console.WriteLine("La longitud de la circunferencia es: " + variables.Num2);
+                Console.WriteLine("El area del circulo es: " + variables.Num4);
             }
             catch (FormatException e)
             {
@@ -244,16 +245,16 @@ namespace Miscela
             {
                 
                 Console.WriteLine("Ingrese el primer número");                
-                variables.num1= Convert.ToDouble(Console.ReadLine());
+                variables.Num1= Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Ingrese el segundo número");                
-                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                variables.Num2 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Ingrese el tercer número");
-                variables.num3 = Convert.ToDouble(Console.ReadLine());;
+                variables.Num3 = Convert.ToDouble(Console.ReadLine());;
 
-                variables.num4 = (variables.num1 + variables.num2 + variables.num3) / 3;
-                Console.WriteLine("El promedio de los tres numeros es: " + variables.num4);
+                variables.Num4 = (variables.Num1 + variables.Num2 + variables.Num3) / 3;
+                Console.WriteLine("El promedio de los tres numeros es: " + variables.Num4);
 
             }
             catch (FormatException e)
